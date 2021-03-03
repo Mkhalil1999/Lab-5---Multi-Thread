@@ -39,17 +39,17 @@ namespace Multi_Threaded_RW
                 {  // we want to open the file?
                 
                     file = c.openRead();
-                lock (file)
-                {
+                    lock (file)
+                    {
                     if (file != null)
                     { // success at opening?
-                        state = Status.Reading;
-                        button1.Text = "Read";
-                        label1.Text = "";
-                        button2.Enabled = true;   // buttons set to read lines and close file
+                            state = Status.Reading;
+                            button1.Text = "Read";
+                            label1.Text = "";
+                            button2.Enabled = true;   // buttons set to read lines and close file
+                        }
+                        else { label1.Text = "Open error. Try later"; }
                     }
-                    else { label1.Text = "Open error. Try later"; }
-                }
                 }
                 else if (state == Status.Reading)
                 {  // read a new line:

@@ -1,0 +1,13 @@
+E:\K - State\Temp\10-Multi-Threaded-RW\bin\Debug\Multi_Threaded_RW.exe
+E:\K - State\Temp\10-Multi-Threaded-RW\bin\Debug\Multi_Threaded_RW.pdb
+E:\K - State\Temp\10-Multi-Threaded-RW\bin\Debug\System.ValueTuple.dll
+E:\K - State\Temp\10-Multi-Threaded-RW\bin\Debug\System.ValueTuple.xml
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\10-Multi-Threaded-RW.csprojAssemblyReference.cache
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\Multi_Threaded_RW.WForm.resources
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\Multi_Threaded_RW.Properties.Resources.resources
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\Multi_Threaded_RW.RForm.resources
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\10-Multi-Threaded-RW.csproj.GenerateResource.cache
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\10-Multi-Threaded-RW.csproj.CoreCompileInputs.cache
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\10-Multi-Threaded-RW.csproj.CopyComplete
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\Multi_Threaded_RW.exe
+E:\K - State\Temp\10-Multi-Threaded-RW\obj\x86\Debug\Multi_Threaded_RW.pdb

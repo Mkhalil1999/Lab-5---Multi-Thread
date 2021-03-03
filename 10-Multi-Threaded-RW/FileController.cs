@@ -26,36 +26,53 @@ namespace Multi_Threaded_RW
         // If file cannot be opened, returns null.
         public Reader openRead()
         {
-            lock (thefile)
+            if(STATE == Status.Closed && thefile != null)
             {
-                Reader r = null;
-                thefile.initRead();
-                r = thefile;
-                STATE = Status.Reading;
-                return r;
+                lock (this)
+                {
+                    Reader r = null;
+                    thefile.initRead();
+                    r = thefile;
+                    STATE = Status.Reading;
+                    return r;
+                }
             }
-            
+            else 
+            {
+                return null;
+            }
+
         }
 
         // opens the file for write use; returns handle to file.  
         //   If file cannot be opened, returns null.
         public Writer openWrite()
         {
-            lock (thefile)
+            if (STATE == Status.Closed && thefile != null)
             {
-                Writer w = thefile;
-                thefile.initWrite();
-                w = thefile;
-                STATE = Status.Writing;
-                return w;
+                lock (this)
+                {
+                    Writer w = thefile;
+                    thefile.initWrite();
+                    w = thefile;
+                    STATE = Status.Writing;
+                    return w;
+                }
             }
-            
+            else
+            {
+                return null;
+            }
+  
         }
 
         // closes file
         public void close()
         {
-
+            lock (this)
+            {
+                STATE = Status.Closed;
+            }
         }
     }
 }
